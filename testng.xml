@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GUI Challenge" parallel="tests" thread-count="6">
+<!--    <test name="Demo Folder1" group-by-instances="true">-->
+<!--        <classes>-->
+<!--            <class name="Runner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="Successful Login" group-by-instances="true">
+        <classes>
+            <class name="SuccessfulLogin"/>
+        </classes>
+    </test>
+    <test name="Failed Login" group-by-instances="true">
+        <classes>
+            <class name="FailedLogin"/>
+        </classes>
+    </test>
+    <test name="Successful Search" group-by-instances="true">
+        <classes>
+            <class name="SuccessfulSearch"/>
+        </classes>
+    </test>
+    <test name="Verify Movie Genre Filter" group-by-instances="true">
+        <classes>
+            <class name="VerifyMovieGenreFilter"/>
+        </classes>
+    </test>
+    <test name="Validate Acting Timeline" group-by-instances="true">
+        <classes>
+            <class name="ValidateActingTimeline"/>
+        </classes>
+    </test>
+    <test name="Sort By Dates On Ascending Order" group-by-instances="true">
+        <classes>
+            <class name="SortByDatesOnAscendingOrder"/>
+        </classes>
+    </test>
+</suite>
